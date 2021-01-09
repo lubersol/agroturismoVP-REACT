@@ -1,7 +1,6 @@
 import React from "react";
 //import { Button, notification } from 'antd';
 import './Header.css';
-import React from "react";
 import {Link} from 'react-router-dom';
 
 // class component
