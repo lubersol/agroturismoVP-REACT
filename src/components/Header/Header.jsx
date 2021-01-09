@@ -10,13 +10,12 @@ class Header extends React.Component {
       <header className="header">
               <div className='logo'></div>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/entorno">Entorno</Link>
-          <Link to="/habitaciones">Habitaciones</Link>
-          <Link to="/galeria">Galeria</Link>
-          <Link to="/registro">Registro</Link>
+          <Link to="/">Inicio</Link>
+          {/* <Link to="/entorno">Entorno</Link> */}
+          <Link to="/rooms">Habitaciones</Link>
+          <Link to="/gallery">Galeria</Link>
+          <Link to="/register">Registro</Link>
           <Link to="/login">Login</Link>
-
         </nav>
       </header>
     );

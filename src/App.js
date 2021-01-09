@@ -11,8 +11,8 @@ import Footer from './components/Footer/Footer';
 import Home from './containers/Home/Home';
 import Register from './containers/Register/Register';
 import Login from './containers/Login/Login';
-import Rooms from './containers/Rooms/Rooms';
-import Gallery from './containers/Gallery/Gallery';
+// import Rooms from './containers/Rooms/Rooms';
+// import Gallery from './containers/Gallery/Gallery';
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
         <Route path='/' component={Home} exact />
         <Route path='/register' component={Register} exact />
         <Route path='/login' component={Login} exact />
-        <Route path='/rooms' component={Rooms} exact />
-        <Route path='/gallery' component={Gallery} exact />
+        {/* <Route path='/rooms' component={Rooms} exact /> */}
+        {/* <Route path='/gallery' component={Gallery} exact /> */}
       </Switch>
       <Footer />
     </BrowserRouter>
