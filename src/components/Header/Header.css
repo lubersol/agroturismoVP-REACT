@@ -1,0 +1,14 @@
+.header{
+    display:flex;
+    justify-content: center;
+    margin-top: 5em;
+    height: 20em;
+  }
+  
+  .logo{
+    background-image: url(../../images/vpLogo.png);
+    background-size: cover;
+    width: 20em;
+    height: 20em;
+  }
+  
