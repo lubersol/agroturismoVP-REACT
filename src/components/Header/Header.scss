@@ -2,17 +2,29 @@
 
 .header{
     display:flex;
-    justify-content: center;
-    margin-top: 5em;
-    height: 20em;
-    background-color: $Dark;
-    color: $Light;
+    justify-content: space-between;
+    align-items: center;
+    // min-height: 11vh;
+    height: 8.5em;
+    background-color: $LightMenu;
+    color: $Dark;
+    font-family: $font-stack;
+    padding: 1em;
+    // font-weight: 2em;
+    // font-size: 1.5em;
   }
   
   .logo{
-    background-image: url(../../images/vpLogo.png);
+    background-image: url(../../images/logoVP.png);
     background-size: cover;
     width: 20em;
-    height: 20em;
+    height: 8.5em;
+    padding: 0.5em;
   }
-  
+  .header a, .header span {
+    all: unset;
+    color: $LightMenu;
+    padding: 1em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
