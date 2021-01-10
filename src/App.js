@@ -8,7 +8,7 @@ import Header from './components/Header/Header';
 //import Footer from './components/Footer/Footer';
 
 //Importación de containers
-//import Home from './containers/Home/Home';
+import Home from './containers/Home/Home';
 //import Register from './containers/Register/Register';
 import Login from './containers/Login/Login';
 // import Rooms from './containers/Rooms/Rooms';
@@ -23,14 +23,14 @@ function App() {
   }
   const [user, setUser] = useState(initialUser);
 
-return (
+  return (
     <BrowserRouter>
       <Header />
       <Switch>
-        {/* <Route path='/' component={Home} exact /> */}
+        <Route path='/' component={Home} exact />
         {/* <Route path='/register' component={Register} exact /> */}
         <Route path='/login' component={Login} exact>
-        <Login setUser={setUser} />
+          <Login setUser={setUser} />
         </Route>
         {/* <Route path='/rooms' component={Rooms} exact /> */}
         {/* <Route path='/gallery' component={Gallery} exact /> */}

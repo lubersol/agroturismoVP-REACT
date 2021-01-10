@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import './Login.css';
+import './Login.scss';
 import { notification } from 'antd';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
@@ -38,11 +38,6 @@ const Login = (props) => {
 
     return (
         <div className="containerForm">
-            <header className="cabeceraBoton">
-                <div className='botonCaja'>
-                    <Link to='/' className='boton_atras'>Volver atras</Link>
-                </div>
-            </header>
             <form className="formulario" onSubmit={handleSubmit}>
                 <header className="cajaTitulo">
                     <p className="titular">Area cliente</p>

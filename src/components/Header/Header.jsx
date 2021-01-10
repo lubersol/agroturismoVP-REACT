@@ -9,12 +9,12 @@ class Header extends React.Component {
     return (
       <header className="header">
               <div className="logo"></div>
-        <nav>
+        <nav className="menu">
           <Link to="/">Inicio</Link>
           {/* <Link to="/entorno">Entorno</Link> */}
           {/* <Link to="/rooms">Habitaciones</Link> */}
           {/* <Link to="/gallery">Galeria</Link> */}
-          {/* <Link to="/register">Registro</Link> */}
+          <Link to="/register">Registro</Link>
           <Link to="/login">Login</Link>
         </nav>
       </header>

@@ -1,0 +1,36 @@
+@import '../../global.scss';
+
+.home {
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    height: 100vh;
+}
+.contenedorCentral {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.collage {
+    display: flex;
+    background-image: url(../../images/exterior_dia_piscina.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 55em;
+    height: 30em;
+    // margin-right: 3.5em;
+    // margin-left: 1.5em;
+}
+
+.textHome {
+    display: flex;
+    align-self: flex-start;
+    margin: 0.5em;
+    width: 17em;
+    text-align: justify;
+    font-size: 1.75em;
+    line-height: 1.3;
+}
+
