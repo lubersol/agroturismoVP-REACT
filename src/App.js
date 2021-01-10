@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 
 //Importación de componentes
 import Header from './components/Header/Header';
-//import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 //Importación de containers
 import Home from './containers/Home/Home';
@@ -35,7 +35,7 @@ function App() {
         {/* <Route path='/rooms' component={Rooms} exact /> */}
         {/* <Route path='/gallery' component={Gallery} exact /> */}
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

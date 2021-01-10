@@ -1,0 +1,11 @@
+@import '../../global.scss';
+
+.footer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $LightMenu;
+    height: 5em;
+    color: $primary-color;
+    font-family: $font-stack;
+}

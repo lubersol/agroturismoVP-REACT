@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .containerForm {
-    background-color: white;
+    background-color: $LightMenu;
 }
 
 .titular {
@@ -10,24 +10,13 @@
     font-size: 2em;
     text-align: center;
     margin-top: 0.5em;
-    background-color: white;
+    background-color: $Light;
 }
-
-.botonCaja {
-    background-color: rgb(58, 56, 56);
-}
-
-.cabeceraBoton {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 1.5em;
-    background-color: rgb(58, 56, 56);
-}
-
 
 .cajaTitulo {
-    color: $primary-color;
+    color: $Dark;
     font-family: $font-stack;
+    background-color: $Light;
 }
 
 .formulario {
@@ -35,8 +24,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 75vh;
-    background-color: white;
+    min-height: 80vh;
+    background-color: $Light;
 }
 
 .campo {
