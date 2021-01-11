@@ -14,7 +14,7 @@ class Header extends React.Component {
           <Link to="/">Inicio</Link>
           {/* <Link to="/entorno">Entorno</Link> */}
           {/* <Link to="/rooms">Habitaciones</Link> */}
-          {/* <Link to="/gallery">Galeria</Link> */}
+          <Link to="/gallery">Galeria</Link>
           <Link to="/register">Registro</Link>
           <Link to="/login">Login</Link>
         </nav>

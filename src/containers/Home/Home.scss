@@ -1,10 +1,14 @@
 @import '../../global.scss';
 
+body {
+    font-size: 0.80em!important;
+}
+
 .home {
     display: flex;
     flex-direction: column;
     color: $primary-color;
-    height: 68vh;
+    height: 70vh;
 }
 .contenedorCentral {
     display: flex;
@@ -19,7 +23,7 @@
     background-position: right;
     background-size: cover;
     width: 55em;
-    height: 30em;
+    height: 34.2em;
     // margin-right: 3.5em;
     // margin-left: 1.5em;
 }

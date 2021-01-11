@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import GalleryImage from '../components/GalleryModal/GalleryImage';
-import GalleryModal from '../components//GalleryModal/GalleryModal';
+import GalleryImage from '../../components/GalleryModal/GalleryImage';
+import GalleryModal from '../../components/GalleryModal/GalleryModal';
 
 import './Gallery.scss';
 
 //Galeria de imagenes
 let imgUrls = [
-    '../images/botijos.jpg',
-    '../images/casa_vistas.jpg'
+    './src/images/botijos.jpg',
+    './src/images/casa_vistas.jpg'
     // 'https://source.unsplash.com/gThfDnqgfMw/800x600',
     // 'https://source.unsplash.com/_1x_x8Vtg2w/800x600',
     // 'https://source.unsplash.com/TFP_s4_jRuE/800x600',
@@ -43,7 +43,7 @@ export default class Gallery extends Component {
                     {
                         imgUrls.map((url, index) => {
                             return (
-                                <div key={index} className='col-sm-6 col-md-3 col-xl-2'>
+                                <div key={index} className='col-sm-4 col-md-2 col-xl-1'>
 
                                     <div className='gallery-card'>
 
@@ -65,8 +65,7 @@ export default class Gallery extends Component {
     }
 
 
-    // Function for opening modal dialog
-    // I change the function to a arrow functions to avoid to declare the binding in the constructor
+    // Funcion para abrir la modal
     openModal = (url) => {
 
         this.setState({
@@ -75,8 +74,8 @@ export default class Gallery extends Component {
         });
     }
 
-    // Function for closing modal dialog
-    // I change the function to a arrow functions to avoid to declare the binding in the constructor
+    // Función para cerrar la modal
+    // Se usa arrow function para evitar hacer el binding en el constructor
     closeModal = () => {
 
         this.setState({
