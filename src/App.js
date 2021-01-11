@@ -12,7 +12,7 @@ import Home from './containers/Home/Home';
 import Register from './containers/Register/Register';
 import Login from './containers/Login/Login';
 // import Rooms from './containers/Rooms/Rooms';
-// import Gallery from './containers/Gallery/Gallery';
+import Gallery from './containers/Gallery/Gallery';
 
 function App() {
   let initialUser = null;
@@ -33,7 +33,7 @@ function App() {
           <Login setUser={setUser} />
         </Route>
         {/* <Route path='/rooms' component={Rooms} exact /> */}
-        {/* <Route path='/gallery' component={Gallery} exact /> */}
+        <Route path='/gallery' component={Gallery} exact /> 
       </Switch>
       <Footer />
     </BrowserRouter>
