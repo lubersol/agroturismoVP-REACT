@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
+
 import './App.css';
 import 'antd/dist/antd.css';
+
 
 //Importación de componentes
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+// import Rents from './components/Rents/Rents';
 
 //Importación de containers
 import Home from './containers/Home/Home';
@@ -28,6 +34,8 @@ function App() {
       <Header />
       <Switch>
         <Route path='/' component={Home} exact />
+          {/* <Rents /> */}
+        {/* </Route> */}
         <Route path='/register' component={Register} exact />
         <Route path='/login' component={Login} exact>
           <Login setUser={setUser} />

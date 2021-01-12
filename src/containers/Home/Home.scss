@@ -14,7 +14,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    align-items: center;
 }
 
 .collage {
@@ -28,14 +27,13 @@ body {
     // margin-left: 1.5em;
 }
 
-.textHome {
+.picker {
     display: flex;
-    // align-self: flex-start;
-    margin: 0.5em;
+    margin: 0;
     width: 20em;
     text-align: justify;
-    font-size: 1.75em;
-    line-height: 1.3;
+    font-size: 1.5em;
+    line-height: 1;
     margin-right: auto;
 }
 

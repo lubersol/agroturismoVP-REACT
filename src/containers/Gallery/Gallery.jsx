@@ -43,7 +43,7 @@ export default class Gallery extends Component {
                     {
                         imgUrls.map((url, index) => {
                             return (
-                                <div key={index} className='col-sm-4 col-md-2 col-xl-1'>
+                                <div key={index} className='col-sm-6 col-md-3 col-xl-2'>
 
                                     <div className='gallery-card'>
 
