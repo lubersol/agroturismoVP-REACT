@@ -6,8 +6,6 @@ import 'antd/dist/antd.css';
 //Importación de componentes
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import RangePicker from './components/RangePicker/RangePicker';
-
 
 //Importación de containers
 import Home from './containers/Home/Home';
@@ -29,9 +27,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route path='/' component={Home} exact>
-          <RangePicker />
-        </Route>
+        <Route path='/' component={Home} exact />
         <Route path='/register' component={Register} exact />
         <Route path='/login' component={Login} exact>
           <Login setUser={setUser} />

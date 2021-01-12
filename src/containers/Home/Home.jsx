@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import './Home.scss';
+import '../../components/RangePicker/RangePicker';
 
 class Home extends Component {
     constructor(props) {
@@ -12,9 +13,7 @@ class Home extends Component {
                 <div className='home'>
                     <section className="contenedorCentral">
                         <section className="textHome">
-                        <p>ESPACIO PARA PONER EL CALENDARIO DE RESERVAS <br /><br />
-                        </p>
-                        <p>ESPACIO PARA PONER EL BOTON DE RESERVAS EN VERDE AGUA?</p>
+                            <RangePicker />
                         </section>
                         <section className='collage'></section>
                     </section>
