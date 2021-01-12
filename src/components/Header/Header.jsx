@@ -1,15 +1,15 @@
 import React from "react";
 //import { Button, notification } from 'antd';
 import './Header.scss';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // class component
 class Header extends React.Component {
-  
+
   render() {
     return (
       <header className="header">
-              <div className="logo"></div>
+        <div className="logo"></div>
         <nav className="menu">
           <Link to="/">Inicio</Link>
           {/* <Link to="/entorno">Entorno</Link> */}
@@ -22,5 +22,5 @@ class Header extends React.Component {
     );
   }
 }
- 
+
 export default Header;
