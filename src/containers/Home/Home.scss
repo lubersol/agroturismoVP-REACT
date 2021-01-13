@@ -18,7 +18,7 @@ body {
 
 .collage {
     display: flex;
-    background-image: url(../../images/foto_finca.jpg);
+    // background-image: url(../../../public/images/foto_finca.jpg);
     background-position: right;
     background-size: cover;
     width: 55em;
@@ -31,7 +31,7 @@ body {
     display: flex;
     // justify-content: center;
     margin: 0;
-    width: 32em;
+    width: 32.5em;
     // text-align: justify;
     font-size: 1.5em;
     line-height: 1;
@@ -41,7 +41,7 @@ body {
 .reservar {
     display: flex;
     justify-content: center;
-    width: 12em;
+    width: 13em;
     margin-top: 1em;
     text-align: center;
 }
@@ -50,4 +50,5 @@ body {
     font-size: 1.5em;
     color: $Dark;
     font-family: $font-stack; 
+    margin:0;
 }

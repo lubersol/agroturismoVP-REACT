@@ -32,10 +32,12 @@ class Home extends Component {
                                 onFocusChange={focusedInput => this.setState({ focusedInput })} // PropTypes.func.isRequired,
                             />
                             <section className="reservar">
-                                <span className="titulo">¡Haz tu reserva ahora!</span>
+                                <span className="titulo">Consulta la disponibilidad ahora</span>
                             </section>
                         </section>
-                        <section className='collage'></section>
+                        <section className='collage'><img src="/images/foto_finca.jpg" />
+
+</section>
                     </section>
                 </div>
             </Fragment>
