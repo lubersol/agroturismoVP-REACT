@@ -7,7 +7,7 @@ body {
 .home {
     display: flex;
     flex-direction: column;
-    color: $primary-color;
+    // color: $primary-color;
     height: 70vh;
 }
 .contenedorCentral {
@@ -29,11 +29,25 @@ body {
 
 .picker {
     display: flex;
+    // justify-content: center;
     margin: 0;
-    width: 20em;
-    text-align: justify;
+    width: 32em;
+    // text-align: justify;
     font-size: 1.5em;
     line-height: 1;
-    margin-right: auto;
+    // margin-right: auto;
 }
 
+.reservar {
+    display: flex;
+    justify-content: center;
+    width: 12em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 1.5em;
+    color: $Dark;
+    font-family: $font-stack; 
+}

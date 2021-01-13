@@ -18,7 +18,7 @@ let imgUrls = [
     'https://source.unsplash.com/JZCJotPa96c/800x600',
     'https://source.unsplash.com/8X19catOuNI/800x600',
     'https://source.unsplash.com/_GDff35-Pa8/800x600',
-    //'https://source.unsplash.com/XYok1nBGvhk/800x600'
+    'https://source.unsplash.com/XYok1nBGvhk/800x600'
 ]
 
 
@@ -43,7 +43,7 @@ export default class Gallery extends Component {
                     {
                         imgUrls.map((url, index) => {
                             return (
-                                <div key={index} className='col-sm-6 col-md-3 col-xl-2'>
+                                <div key={index} className='col-sm-6 col-md-3 col-xl-3'>
 
                                     <div className='gallery-card'>
 

@@ -31,6 +31,9 @@ class Home extends Component {
                                 focusedInput={this.state.focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
                                 onFocusChange={focusedInput => this.setState({ focusedInput })} // PropTypes.func.isRequired,
                             />
+                            <section className="reservar">
+                                <span className="titulo">¡Haz tu reserva ahora!</span>
+                            </section>
                         </section>
                         <section className='collage'></section>
                     </section>

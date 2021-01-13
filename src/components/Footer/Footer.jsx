@@ -17,7 +17,11 @@ class Footer extends React.Component {
                     <p className="texto">vparadise@gmail.com</p>
                     <p></p>
                 </div>
-                <div><p className="servicios">Servicios</p></div>
+                <div><p className="servicios">Servicios</p>
+                <p className="texto">Aparcamiento</p>
+                <p className="texto">Conexion Wi-Fi</p>
+                <p className="texto">Desayuno incluido</p>
+                </div>
                 <div>
                     <p className="condiciones">Condiciones</p></div>
                 <div>©Lucía Bermejo</div>
