@@ -6,19 +6,28 @@ import './Gallery.scss';
 
 //Galeria de imagenes
 let imgUrls = [
-    // './src/images/botijos.jpg',
-    // './src/images/casa_vistas.jpg'
-    'https://source.unsplash.com/gThfDnqgfMw/800x600',
-    'https://source.unsplash.com/_1x_x8Vtg2w/800x600',
-    'https://source.unsplash.com/TFP_s4_jRuE/800x600',
-    'https://source.unsplash.com/pElM4yerF5Q/800x600',
-    'https://source.unsplash.com/sFsy8CKyQ5c/800x600',
-    'https://source.unsplash.com/0WGucY1VHI0/800x600',
-    'https://source.unsplash.com/1ciHU-qPifY/800x600',
-    'https://source.unsplash.com/JZCJotPa96c/800x600',
-    'https://source.unsplash.com/8X19catOuNI/800x600',
-    'https://source.unsplash.com/_GDff35-Pa8/800x600',
-    'https://source.unsplash.com/XYok1nBGvhk/800x600'
+     './images/botijos.jpg',
+     './images/casa_vistas.jpg',
+     './images/interiorTinaja.jpg',
+     './images/casaPiscina.jpg',
+     './images/chimeneaExterior.jpg',
+     './images/comedor.jpg',
+     './images/decoracion_mesa.jpg',
+     './images/entrada_huerto.jpg',
+     './images/entrada.jpg',
+     './images/entradaPanoramica.jpg',
+     './images/entradaPrincipal.jpg',
+     './images/exterior_dia_piscina.jpg',
+     './images/exterior_noche_piscina.jpg',
+     './images/exterior_noche.jpg',
+     './images/exteriorCasa.jpg',
+     './images/exteriorFlores.jpg',
+     './images/exteriorPlantas.jpg',
+     './images/fachadaLateral.jpg',
+     './images/fachadaTrasero.jpg',
+     './images/fachadaFrontal.jpg'
+
+
 ]
 
 
@@ -44,13 +53,9 @@ export default class Gallery extends Component {
                         imgUrls.map((url, index) => {
                             return (
                                 <div key={index} className='col-sm-6 col-md-3 col-xl-3'>
-
                                     <div className='gallery-card'>
-
                                         <GalleryImage className='gallery-thumbnail' src={url} alt={'Image number ' + (index + 1)} />
-
                                         <span className='card-icon-open fa fa-expand-arrows-alt' value={url} onClick={() => this.openModal(url)}></span>
-
                                     </div>
                                 </div>
                             )
