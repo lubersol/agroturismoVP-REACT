@@ -20,11 +20,12 @@ const Register = () => {
                 password: event.target.password.value
             };
             console.log(body);
-            await axios.post('https://heroku-mongo-mi-atlas.herokuapp.com/api/user', body)
+            await axios.post(process.env.REACT_APP_BASE_URL + '/client/register', body)
             notification.success({ message: 'Registrado!', description: 'Bienvenido! Te has registrado correctamente' })
             history.push('/login')
         } catch (error) {
-            console.log(error)
+            console.log(error);
+            notification.error({ message: 'Error', description: 'Se ha producido un error a la hora de registrarte' })
         }
     }
 

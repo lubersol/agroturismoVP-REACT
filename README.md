@@ -2,7 +2,7 @@
 
 API REST creada en frontend como website de agroturismo "Varitx Paradise", destinada a hacer reservas para pasar vacaciones en una finca de agroturismo situada en el norte de Mallorca. 
 
-![Screenshot](public/images/logoCasa.png)
+![Screenshot](public/images/logo_casa_vistas.png)
 
 ## DESCRIPCIÓN :open_book:
 

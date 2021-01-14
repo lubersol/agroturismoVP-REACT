@@ -6,28 +6,26 @@ import './Gallery.scss';
 
 //Galeria de imagenes
 let imgUrls = [
-     './images/botijos.jpg',
      './images/casa_vistas.jpg',
+     './images/fachadaLateral.jpg',
+     './images/exteriorCasa.jpg',
      './images/interiorTinaja.jpg',
-     './images/casaPiscina.jpg',
      './images/chimeneaExterior.jpg',
      './images/comedor.jpg',
-     './images/decoracion_mesa.jpg',
+     './images/botijos.jpg',
      './images/entrada_huerto.jpg',
      './images/entrada.jpg',
      './images/entradaPanoramica.jpg',
+     './images/exterior_noche_piscina.jpg',
      './images/entradaPrincipal.jpg',
      './images/exterior_dia_piscina.jpg',
-     './images/exterior_noche_piscina.jpg',
+     './images/casaPiscina.jpg',
      './images/exterior_noche.jpg',
-     './images/exteriorCasa.jpg',
+     './images/decoracion_mesa.jpg',
      './images/exteriorFlores.jpg',
      './images/exteriorPlantas.jpg',
-     './images/fachadaLateral.jpg',
-     './images/fachadaTrasero.jpg',
+     './images/exteriorTrasero.jpg',
      './images/fachadaFrontal.jpg'
-
-
 ]
 
 
