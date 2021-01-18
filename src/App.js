@@ -11,7 +11,7 @@ import 'antd/dist/antd.css';
 //Importación de componentes
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-// import Rents from './components/Rents/Rents';
+
 
 //Importación de containers
 import Home from './containers/Home/Home';
@@ -19,6 +19,7 @@ import Register from './containers/Register/Register';
 import Login from './containers/Login/Login';
 // import Rooms from './containers/Rooms/Rooms';
 import Gallery from './containers/Gallery/Gallery';
+//import Rents from './containers/Rents/Rents';
 
 function App() {
   let initialUser = null;
@@ -34,8 +35,6 @@ function App() {
       <Header />
       <Switch>
         <Route path='/' component={Home} exact />
-          {/* <Rents /> */}
-        {/* </Route> */}
         <Route path='/register' component={Register} exact />
         <Route path='/login' component={Login} exact>
           <Login setUser={setUser} />

@@ -1,61 +1,57 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, { useHistory } from 'react';
 import './Login.scss';
 import { notification } from 'antd';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 
-const Login = (props) => {
+const Login = ({ setUser }) => {
 
     const history = useHistory();
+    const handleSubmit = event => {
+        event.preventDefault(); // para que no se recargue la pagina
+        const user = {
+            email: event.target.email.value,
+            password: event.target.password.value
+        };
+        console.log(user);
+        axios.post('https://127.0.0.1:8000/api/login', user)
+        .then(res=>{
+        console.log("axios hecho")
+        localStorage.setItem('authToken', res.data.token);
+        localStorage.setItem('user', JSON.stringify(res.data));
+        setUser(res.data);
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+        notification.success({ message: 'Login correcto!', description: 'Bienvenido a Varitx Paradise!' })
 
-    const handleSubmit = async (event) => {
+        setTimeout(() => {
+            history.push('/profile')
+        }, 1000);
+    })
+    .catch (error=> { throw (error) })
+}
+// notification.error({ message: 'Error', description: 'Ha habido un problema en el login' })
 
-        try {
-            event.preventDefault();
-            const params= new URLSearchParams()
-            params.append('email',email)
-            params.append('password',password)
-
-            let login = await axios.post('https://127.0.0.1:8000/api/login', params);
-            console.log(login);
-            let token = await login.data.token;
-            console.log(token);
-            localStorage.setItem('access_token', token);
-            localStorage.setItem('email', email);
-            props.setUser(email);
-            notification.success({ message: 'Login correcto!', description: 'Bienvenido a mi videoclub ' })
-            history.push('/rentmovie')
-        } catch (error) {
-            console.error(error)
-            notification.error({ message: 'Error', description: 'Ha habido un problema en el login' })
-        }
-    }
-
-    return (
-        <div className="containerForm">
-            <form className="formulario" onSubmit={handleSubmit}>
-                <header className="cajaTitulo">
-                    <p className="titular">Area cliente</p>
-                </header>
-                <div className="campo">
-                    <input className="datos" type="email" onChange={event=>setEmail(event.target.value)} name="email" placeholder="Introduce tu email" required />
-                </div>
-                <div className="campo">
-                    <input className="datos" type="password" onChange={event=>setPassword(event.target.value)} name="password" placeholder="Introduce una contraseña" required />
-                </div>
-                <div className="campo">
-                    <button type="submit" className="enviar">
-                        Enviar
+return (
+    <div className="containerForm">
+        <form className="formulario" onSubmit={handleSubmit}>
+            <header className="cajaTitulo">
+                <p className="titular">Area cliente</p>
+            </header>
+            <div className="campo">
+                <input className="datos" type="email" name="email" placeholder="Introduce tu email" required />
+            </div>
+            <div className="campo">
+                <input className="datos" type="password" name="password" placeholder="Introduce una contraseña" required />
+            </div>
+            <div className="campo">
+                <button type="submit" className="enviar">
+                    Enviar
                         </button>
-                </div>
-            </form>
-        </div>
-    );
+            </div>
+        </form>
+    </div>
+);
 };
 
 export default Login;

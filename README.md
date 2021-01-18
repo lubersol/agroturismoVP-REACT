@@ -20,6 +20,8 @@ AÑADIR MOCKS/SKETCHS/BOCETOS DE LAS DIFERENTES VISTAS EXPLICANDO LOS PASOS QUE 
 
 :large_blue_circle: ANT DESIGN.
 
+:large_blue_circle: BOOTSTRAP.
+
 ## VISTAS DE USUARIO :bust_in_silhouette:
 
 :radio_button: REGISTRO.
@@ -30,5 +32,5 @@ AÑADIR MOCKS/SKETCHS/BOCETOS DE LAS DIFERENTES VISTAS EXPLICANDO LOS PASOS QUE 
 
 :radio_button: RESERVAS.
 
-## ENDPOINTS :large_blue_circle:
+## ENDPOINTS :link:
 

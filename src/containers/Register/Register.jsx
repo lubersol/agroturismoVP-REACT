@@ -1,7 +1,6 @@
 import React from 'react';
 import { useHistory } from "react-router";
-// import './Register.scss';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { notification } from 'antd';
 import axios from 'axios';
 
@@ -20,7 +19,7 @@ const Register = () => {
                 password: event.target.password.value
             };
             console.log(body);
-            await axios.post(process.env.REACT_APP_BASE_URL + '/client/register', body)
+            await axios.post('https://127.0.0.1:8000/api/user' + '/user/register', body)
             notification.success({ message: 'Registrado!', description: 'Bienvenido! Te has registrado correctamente' })
             history.push('/login')
         } catch (error) {
