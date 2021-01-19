@@ -35,7 +35,7 @@ class Home extends Component {
                                 <span className="titulo">Consulta la disponibilidad para reservar ahora</span>
                             </section>
                         </section>
-                        <section className='collage'><img src="/images/foto_finca.jpg" />
+                        <section className='collage'><img src="/images/foto_finca.jpg" alt="foto fachada varitx paradise" />
 
 </section>
                     </section>

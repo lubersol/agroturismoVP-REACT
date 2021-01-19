@@ -1,4 +1,4 @@
-import React, { useHistory } from 'react';
+import React from 'react';
 import './Login.scss';
 import { notification } from 'antd';
 import { useHistory } from 'react-router-dom';
@@ -15,7 +15,7 @@ const Login = ({ setUser }) => {
             password: event.target.password.value
         };
         console.log(user);
-        axios.post('https://127.0.0.1:8000/api/login', user)
+        axios.post('http://127.0.0.1:8000/api/user/login', user)
         .then(res=>{
         console.log("axios hecho")
         localStorage.setItem('authToken', res.data.token);

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import { useHistory } from "react-router";
 import { notification,  } from 'antd';
 
-const Profile = ({setClient}) =>{
+const Profile = ({setUser}) =>{
   const history = useHistory();
 
   const logout = async () =>{
@@ -15,11 +15,11 @@ const Profile = ({setClient}) =>{
         headers: {Authorization: `Bearer ${token}`}
       }
       console.log(token)
-      await axios.post(process.env.REACT_APP_BASE_URL + '/client/logout',{}, options)
-      localStorage.removeItem('client')
+      await axios.post('https://localhost:8000/api/' + '/user/logout',{}, options)
+      localStorage.removeItem('user')
       localStorage.removeItem('authToken')
-      setClient(null)
-      notification.success({message:'Goodbye!',description:'Hope to see you soon!'})
+      setUser(null)
+      notification.success({message:'Hasta pronto!',description:'Gracias por tu visita, esperamos verte pronto!'})
          setTimeout(() => {
             history.push('/')
         }, 1000); 
@@ -28,9 +28,8 @@ const Profile = ({setClient}) =>{
   }
   }
         return (
-        <div className='profile'>
+        <div className='perfil'>
           <div className='header'>
-              <div className='icon'></div>
           </div>
           <div className='buttons'>
               <Link to='/appointments'>Show Appointments</Link>

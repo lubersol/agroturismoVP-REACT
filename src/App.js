@@ -7,11 +7,9 @@ import 'react-dates/lib/css/_datepicker.css';
 import './App.css';
 import 'antd/dist/antd.css';
 
-
 //Importación de componentes
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-
 
 //Importación de containers
 import Home from './containers/Home/Home';
