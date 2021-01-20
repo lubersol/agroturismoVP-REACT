@@ -10,6 +10,7 @@ import 'antd/dist/antd.css';
 //Importación de componentes
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Roles from './components/Roles';
 
 //Importación de containers
 import Home from './containers/Home/Home';
@@ -17,7 +18,9 @@ import Register from './containers/Register/Register';
 import Login from './containers/Login/Login';
 // import Rooms from './containers/Rooms/Rooms';
 import Gallery from './containers/Gallery/Gallery';
-//import Rents from './containers/Rents/Rents';
+import Rents from './containers/Rents/Rents';
+import Profile from './containers/Profile/Profile';
+
 
 function App() {
   let initialUser = null;
@@ -39,6 +42,11 @@ function App() {
         </Route>
         {/* <Route path='/rooms' component={Rooms} exact /> */}
         <Route path='/gallery' component={Gallery} exact />
+        <Route path='/profile' component={Profile} exact>
+          <Roles user={user} setUser={setUser} />
+        </Route>
+        <Route path='/rents' component={Rents} exact />
+          {/* <Redirect to="/profile" exact /> */} 
       </Switch>
       <Footer />
     </BrowserRouter>

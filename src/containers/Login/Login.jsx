@@ -15,7 +15,7 @@ const Login = ({ setUser }) => {
             password: event.target.password.value
         };
         console.log(user);
-        axios.post('http://127.0.0.1:8000/api/user/login', user)
+        axios.post('http://localhost:8000/api/user/login', user)
         .then(res=>{
         console.log("axios hecho")
         localStorage.setItem('authToken', res.data.token);

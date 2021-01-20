@@ -16,6 +16,26 @@ class Home extends Component {
         }
     };
 
+//     async makeRent() {
+//         const token= localStorage.getItem('authToken')
+//         const options = {
+//           headers: {Authorization: `Bearer ${token}`}
+//         }
+  
+//     await axios.post('http://localhost:8000/rent/create', this.state, options)
+//     .then(res=> {
+//         console.log(res.data)
+//         notification.success({message: 'Reserva solicitada', description: 'Ha solicitado una reserva'})
+
+//         setTimeout(() => {
+//           history.push("/profile")
+//       }, 1500);
+//       }).catch(error => {
+//         console.log(error)
+//         notification.error({message: 'Error al reservar', description:'Se ha producido un error al hacer la solicitud de reserva'})
+//       })
+//   }
+
     render() {
         return (
             <Fragment>
@@ -31,13 +51,14 @@ class Home extends Component {
                                 focusedInput={this.state.focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
                                 onFocusChange={focusedInput => this.setState({ focusedInput })} // PropTypes.func.isRequired,
                             />
+                                <button   type="submit" className="reservar" onClick={() => this.makeRent()}>Reservar</button>
+
                             <section className="reservar">
                                 <span className="titulo">Consulta la disponibilidad para reservar ahora</span>
                             </section>
                         </section>
                         <section className='collage'><img src="/images/foto_finca.jpg" alt="foto fachada varitx paradise" />
-
-</section>
+                        </section>
                     </section>
                 </div>
             </Fragment>
