@@ -40,7 +40,7 @@ const Rents = () => {
           <div key={rent.id} className='info'>
             <div className='contenido'><span>Fechas</span></div>
             <div className='contenido'>{rent.startDate}</div>
-            <div className='contenido'>{appointment.endDate}</div>
+            <div className='contenido'>{rent.endDate}</div>
             <div className='divEliminar'><button className='botonEliminar' onClick={() => { deleteRent(rent.id) }}>X</button></div>
           </div>
         )}
