@@ -10,6 +10,7 @@ body {
     // color: $primary-color;
     height: 70vh;
 }
+
 .contenedorCentral {
     display: flex;
     justify-content: center;
@@ -18,37 +19,82 @@ body {
 
 .collage {
     display: flex;
-    // background-image: url(../../../public/images/foto_finca.jpg);
     background-position: right;
     background-size: cover;
     width: 55em;
     height: 34.2em;
-    // margin-right: 3.5em;
-    // margin-left: 1.5em;
 }
 
 .picker {
     display: flex;
-    // justify-content: center;
+    flex-direction:column;
+    justify-content: start;
+    align-items: flex-start;
     margin: 0;
     width: 32.5em;
-    // text-align: justify;
     font-size: 1.5em;
-    line-height: 1;
-    // margin-right: auto;
-}
+    line-height: 1.2;
 
-.reservar {
-    display: flex;
-    justify-content: center;
-    width: 13em;
-    margin-top: 1em;
-    text-align: center;
-}
+    .fechaYreserva {
+        display:flex;
+        flex-direction: row;
+        width: 28em;
+    }
 
-.titulo {
-    font-size: 1.5em;
-    color: $Dark;
-    font-family: $font-stack; 
-    margin:0;
+    .divReservar{
+        margin-left: 2em;
+        margin-right: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    .reservar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 26em;
+        text-align: justify;
+        margin: 1.5em;
+    }
+
+    .welcome {
+        font-size: 2em;
+        color: $Dark;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+        color: $Dark;
+        font-family: $font-stack; 
+        margin:0;
+    }
+
+    .divReservar {
+        display:flex;
+        // justify-content: center;
+        // align-items: center;
+        width: 7em;
+        margin-left: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .botonReserva {
+        background-color: rgb(153, 204, 153);
+        border: 1px solid rgb(108, 194, 108);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 0.6em;
+        text-decoration: none;
+        color: $Light;
+        font-size: 1em;
+        height: 2em;
+        width: 6em;
+        &:hover{
+            background-color:rgb(107, 167, 107);
+            border: 1px solid rgb(84, 138, 84);
+            color: $LightMenu;        
+
+        }    
+    }
 }
