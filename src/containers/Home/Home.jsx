@@ -58,7 +58,7 @@ class Home extends Component {
                             </div>
                             <section className="reservar">
                                 <p className="welcome">Welcome to Varitx Paradise!</p>
-                                <p className="titulo">Para solicitar una estancia en Varitx Paradise, agroturismo situado al norte de Mallorca, en Pollensa, consulta nuestra disponibilidad seleccionando las fechas de tus vacaciones en el calendario</p>
+                                <p className="titulo">Para solicitar una estancia en Varitx Paradise, agroturismo situado al norte de Mallorca, en Pollensa, consulta nuestra disponibilidad seleccionando las fechas de tus vacaciones en el calendario superior.</p>
                             </section>
                         </section>
                         <section className='collage'><img src="/images/foto_finca.jpg" alt="foto fachada varitx paradise" />

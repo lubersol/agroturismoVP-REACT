@@ -1,4 +1,7 @@
 @import '../../global.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lobster&display=swap');
+
 
 body {
     font-size: 0.80em!important;
@@ -59,12 +62,13 @@ body {
     .welcome {
         font-size: 2em;
         color: $Dark;
+        font-family: 'Lobster', cursive;
     }
 
     .titulo {
         font-size: 1.5em;
         color: $Dark;
-        font-family: $font-stack; 
+        font-family: 'Inconsolata', monospace;
         margin:0;
     }
 
