@@ -45,7 +45,7 @@ El *administrador* a través de un correo y contraseña puede ver las citas de t
 
 :radio_button: RESERVAS.
 
-![Screenshot](public/images/home.png)
+
 
 
 ## ENDPOINTS :link:
