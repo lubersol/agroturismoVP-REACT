@@ -4,7 +4,7 @@ import './Footer.scss';
 class Footer extends React.Component {
 
     render() {
-        
+
         return (
             <footer className="footer">
                 <div>
@@ -13,14 +13,15 @@ class Footer extends React.Component {
                     <p className="texto">07460 Pollensa</p>
                     <p className="texto">Mallorca España</p>
                 </div>
-                <div><p className="contacto">Contacto</p>                    <p className="texto">(+34)696925484</p>
+                <div><p className="contacto">Contacto</p>
+                    <p className="texto">(+34)666999666</p>
                     <p className="texto">vparadise@gmail.com</p>
                     <p></p>
                 </div>
                 <div><p className="servicios">Servicios</p>
-                <p className="texto">Aparcamiento</p>
-                <p className="texto">Conexion Wi-Fi</p>
-                <p className="texto">Desayuno incluido</p>
+                    <p className="texto">Aparcamiento</p>
+                    <p className="texto">Conexion Wi-Fi</p>
+                    <p className="texto">Desayuno incluido</p>
                 </div>
                 <div>
                     <p className="condiciones">Condiciones</p></div>
