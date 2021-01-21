@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-dates/initialize';
@@ -43,7 +43,7 @@ function App() {
         </Route>
         {/* <Route path='/rooms' component={Rooms} exact /> */}
         <Route path='/gallery' component={Gallery} exact />
-        <Route path='/profile' component={Profile} exact>
+        <Route path='/profile' exact>
           <Roles user={user} setUser={setUser} />
         </Route>
         <Route path='/rents' component={Rents} exact />
