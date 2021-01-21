@@ -24,6 +24,9 @@ AÑADIR MOCKS/SKETCHS/BOCETOS DE LAS DIFERENTES VISTAS EXPLICANDO LOS PASOS QUE 
 
 ## VISTAS DE USUARIO :bust_in_silhouette:
 
+:radio_button: HOME.
+![Screenshot](public/images/home.png)
+
 :radio_button: REGISTRO.
 
 :radio_button: LOGIN.

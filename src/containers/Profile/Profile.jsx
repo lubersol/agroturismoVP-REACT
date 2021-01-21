@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import axios from 'axios'
 import './Profile.scss';
 import { Link } from 'react-router-dom';
 import { useHistory, } from "react-router";
 import { notification, } from 'antd';
 
-const Profile = ({ user, setUsers }) => {
+const Profile = ({ setUser }) => {
 
     const history = useHistory();
-
     const logout = async () => {
         try {
-            let token = localStorage.getItem('authToken')
+            let token = localStorage.getItem('authToken');
             const options = {
                 headers: { Authorization: `Bearer ${token}` }
-            }
+            };
             console.log(token)
             await axios.post('http://localhost:8000/api/user/logout', {}, options)
             localStorage.removeItem('user')
             localStorage.removeItem('authToken')
-            setUsers(null)
+            setUser(null)
+
             notification.success({ message: 'Hasta pronto!', description: 'Gracias por tu visita, esperamos verte pronto!' })
             setTimeout(() => {
                 history.push('/')
@@ -28,6 +28,7 @@ const Profile = ({ user, setUsers }) => {
             console.log(error);
         }
     }
+    
     return (
         <div className='mainContainer'>
             <header className="cajaTitulo">

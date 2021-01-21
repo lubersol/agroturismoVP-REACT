@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
+//Importación de estilos
 import './App.css';
 import 'antd/dist/antd.css';
 
@@ -46,7 +47,7 @@ function App() {
           <Roles user={user} setUser={setUser} />
         </Route>
         <Route path='/rents' component={Rents} exact />
-          {/* <Redirect to="/profile" exact /> */} 
+        {/* <Redirect to="/profile" exact /> */}
       </Switch>
       <Footer />
     </BrowserRouter>
