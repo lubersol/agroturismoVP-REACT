@@ -6,7 +6,10 @@ API REST creada en frontend como website de agroturismo "Varitx Paradise", desti
 
 ## DESCRIPCIÓN :open_book:
 
-AÑADIR MOCKS/SKETCHS/BOCETOS DE LAS DIFERENTES VISTAS EXPLICANDO LOS PASOS QUE SE DAN EN LA APLICACION.
+El proyecto consta de una página *HOME* con un menú de navegación desde el que un *usuario* puede registrarse, hacer login o acceder a una galería de imágenes.
+En la parte central de la página, puede acceder a un calendario desde el cual elegir una fecha de entrada y otra de salida para hacer una reserva.
+Una vez hecho el login, puede acceder a sus reservas.
+El *administrador* a través de un correo y contraseña puede ver las citas de todos los usuarios.
 
 ## TECNOLOGÍAS :gear:
 
@@ -25,15 +28,25 @@ AÑADIR MOCKS/SKETCHS/BOCETOS DE LAS DIFERENTES VISTAS EXPLICANDO LOS PASOS QUE 
 ## VISTAS DE USUARIO :bust_in_silhouette:
 
 :radio_button: HOME.
+
 ![Screenshot](public/images/home.png)
 
 :radio_button: REGISTRO.
 
+![Screenshot](public/images/registro.png)
+
 :radio_button: LOGIN.
+
+![Screenshot](public/images/login.png)
 
 :radio_button: PERFIL.
 
+![Screenshot](public/images/galeria.png)
+
 :radio_button: RESERVAS.
+
+![Screenshot](public/images/home.png)
+
 
 ## ENDPOINTS :link:
 
