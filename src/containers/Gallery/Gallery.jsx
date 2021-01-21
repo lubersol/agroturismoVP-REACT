@@ -6,27 +6,36 @@ import './Gallery.scss';
 
 //Galeria de imagenes
 let imgUrls = [
-     './images/casa_vistas.jpg',
-     './images/fachadaLateral.jpg',
-     './images/exteriorCasa.jpg',
-     './images/interiorTinaja.jpg',
-     './images/chimeneaExterior.jpg',
-     './images/comedor.jpg',
-     './images/botijos.jpg',
-     './images/entrada_huerto.jpg',
-     './images/entrada.jpg',
-     './images/entradaPanoramica.jpg',
-     './images/exterior_noche_piscina.jpg',
-     './images/entradaPrincipal.jpg',
-     './images/exterior_dia_piscina.jpg',
-     './images/casaPiscina.jpg',
-     './images/exterior_noche.jpg',
-     './images/decoracion_mesa.jpg',
-     './images/exteriorFlores.jpg',
-     './images/exteriorPlantas.jpg',
-     './images/exteriorTrasero.jpg',
-     './images/fachadaFrontal.jpg'
+    './images/casa_vistas.jpg',
+    './images/fachadaLateral.jpg',
+    './images/exteriorCasa.jpg',
+    './images/interiorTinaja.jpg',
+    './images/chimeneaExterior.jpg',
+    './images/comedor.jpg',
+    './images/botijos.jpg',
+    './images/entrada_huerto.jpg',
+    './images/mesasTerraza.jpg',
+    './images/terraza.jpg',
+    './images/exterior_noche_piscina.jpg',
+    './images/entradaPrincipal.jpg',
+    './images/exterior_dia_piscina.jpg',
+    './images/porchePalmera.jpg',
+    './images/molino.jpg',
+    './images/decoracion_mesa.jpg',
+    './images/exteriorFlores.jpg',
+    './images/jardinMesas.jpg',
+    './images/exteriorTrasero.jpg',
+    './images/fachadaFrontal.jpg',
+    './images/salon.jpg',
+    './images/salon_vigas.jpg',
+    './images/salonSillon.jpg',
+    './images/panoramica.jpg',
+    './images/habitacion_doble.jpg',
+    './images/habitacion2.jpg',
+    './images/habitacionDosel.jpg',
+    './images/habitacionDoblePiedra.jpg',
 ]
+
 
 
 
@@ -43,7 +52,7 @@ export default class Gallery extends Component {
 
     render() {
         return (
-// Clases de CSS: Bootstrap y nuestros estilos
+            // Clases de CSS: Bootstrap y nuestros estilos
             <div className='container-fluid gallery-container'>
 
                 <div className='row'>
