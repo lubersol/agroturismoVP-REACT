@@ -19,7 +19,7 @@ const Register = () => {
                 password: event.target.password.value
             };
             console.log(body);
-            await axios.post('http://localhost:8000/api/user/register', body)
+            await axios.post('http://localhost:8000/api/auth/register', body)
             notification.success({ message: 'Registrado!', description: 'Bienvenido! Te has registrado correctamente' })
             history.push('/login')
         } catch (error) {

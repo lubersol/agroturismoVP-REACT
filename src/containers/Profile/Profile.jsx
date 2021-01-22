@@ -15,7 +15,7 @@ const Profile = ({ setUser }) => {
                 headers: { Authorization: `Bearer ${token}` }
             };
             console.log(token)
-            await axios.post('http://localhost:8000/api/user/logout', {}, options)
+            await axios.get('http://localhost:8000/api/auth/logout', {}, options)
             localStorage.removeItem('user')
             localStorage.removeItem('authToken')
             setUser(null)
@@ -28,7 +28,7 @@ const Profile = ({ setUser }) => {
             console.log(error);
         }
     }
-    
+
     return (
         <div className='mainContainer'>
             <header className="cajaTitulo">

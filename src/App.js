@@ -36,18 +36,32 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route path='/' component={Home} exact />
-        <Route path='/register' component={Register} exact />
-        <Route path='/login' component={Login} exact>
-          <Login setUser={setUser} />
-        </Route>
-        {/* <Route path='/rooms' component={Rooms} exact /> */}
-        <Route path='/gallery' component={Gallery} exact />
-        <Route path='/profile' exact>
-          <Roles user={user} setUser={setUser} />
-        </Route>
-        <Route path='/rents' component={Rents} exact />
-        {/* <Redirect to="/profile" exact /> */}
+        {user ?
+          <>
+            <Route path='/' component={Home} exact />
+            <Route path='/gallery' component={Gallery} exact />
+            <Route path='/register' component={Register} exact />
+            <Route path='/login' component={Login} exact>
+              <Login setUser={setUser} />
+            </Route>
+            <Route path='/profile' exact>
+              <Roles user={user} setUser={setUser} />
+            </Route>
+            <Route path='/rents' component={Rents} exact />
+            <Redirect to="/" exact />
+          </>
+          :
+          <>
+            <Route path='/' component={Home} exact />
+            {/* <Route path='/rooms' component={Rooms} exact /> */}
+            <Route path='/gallery' component={Gallery} exact />
+            <Route path='/register' component={Register} exact />
+            <Route path='/login' component={Login} exact>
+              <Login setUser={setUser} />
+            </Route>
+            <Redirect to="/" exact />
+          </>
+        }
       </Switch>
       <Footer />
     </BrowserRouter>
