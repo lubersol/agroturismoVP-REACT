@@ -48,7 +48,7 @@ function App() {
               <Roles user={user} setUser={setUser} />
             </Route>
             <Route path='/rents' component={Rents} exact />
-            <Redirect to="/" exact />
+            {/* <Redirect to="/" exact /> */}
           </>
           :
           <>

@@ -5,29 +5,33 @@ import { Link } from 'react-router-dom';
 import { useHistory, } from "react-router";
 import { notification, } from 'antd';
 
-const Profile = ({ setUser }) => {
+const Profile = (props) => {
 
     const history = useHistory();
-    const logout = async () => {
-        try {
-            let token = localStorage.getItem('authToken');
-            const options = {
-                headers: { Authorization: `Bearer ${token}` }
-            };
-            console.log(token)
-            await axios.get('http://localhost:8000/api/auth/logout', {}, options)
-            localStorage.removeItem('user')
-            localStorage.removeItem('authToken')
-            setUser(null)
-
-            notification.success({ message: 'Hasta pronto!', description: 'Gracias por tu visita, esperamos verte pronto!' })
-            setTimeout(() => {
-                history.push('/')
-            }, 1000);
-        } catch (error) {
-            console.log(error);
-        }
+    const logout = () => {
+        localStorage.clear();
+        props.setUser(null)
+        notification.success({ message: 'Hasta pronto!', description: 'Gracias por tu visita, esperamos verte pronto!' })
+        history.push("/");
     }
+    // try {
+    //     // let token = localStorage.getItem('authToken');
+    //     const options = {
+    //         headers: { Authorization: `Bearer ${token}` }
+    //     };
+    //     console.log(token)
+    //     await axios.get('http://localhost:8000/api/auth/logout')
+    //     localStorage.clear('user');
+    //     // localStorage.clear('authToken');
+    //     setUser(null)
+
+    // setTimeout(() => {
+    //     history.push('/')
+    // }, 1000);
+    // } catch (error) {
+    //     console.log(error);
+    // }
+
 
     return (
         <div className='mainContainer'>
@@ -35,7 +39,7 @@ const Profile = ({ setUser }) => {
                 <p className="titular">Area cliente</p>
             </header>
             <section className='logout'>
-                    <button className='logoutButton' onClick={logout}>Logout</button>
+                <button className='logoutButton' onClick={logout}>Logout</button>
             </section>
             <section className='reserva'>
                 <Link to='/rents'>Mis reservas</Link>
