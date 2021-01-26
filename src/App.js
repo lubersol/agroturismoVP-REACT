@@ -40,7 +40,7 @@ function App() {
           <>
             <Route path='/' component={Home} exact />
             <Route path='/gallery' component={Gallery} exact />
-            <Route path='/register' component={Register} exact />
+            {/* <Route path='/register' component={Register} exact /> */}
             <Route path='/login' component={Login} exact>
               <Login setUser={setUser} />
             </Route>
@@ -53,6 +53,7 @@ function App() {
           :
           <>
             <Route path='/' component={Home} exact />
+            <Route path='/rents' component={Rents} exact />
             {/* <Route path='/rooms' component={Rooms} exact /> */}
             <Route path='/gallery' component={Gallery} exact />
             <Route path='/register' component={Register} exact />
