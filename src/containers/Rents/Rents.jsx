@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 const Rents = () => {
   const [rents, setRents] = useState([]);
   useEffect(() => {
-    let userId = localStorage.getItem('user_id')
+    let userId = localStorage.getItem('user_id');
+    console.log(userId);
     axios.get(`http://localhost:8000/api/auth/rent/show/${userId}`)
       .then((res) => {
         console.log(res.data)
@@ -56,8 +57,8 @@ const Rents = () => {
     return (
       <div className='divCentral'>
         <div className='reserva'>
-          {rents?.map(rent =>
-            <div key={rent._id} className='info'>
+          {rents.map((m,i)=>{
+            <div key={i} className='info'>
               <div className='contenido'><span>Fechas</span></div>
               <div className="contenido">
                 <p>Habitación</p></div>
@@ -66,11 +67,13 @@ const Rents = () => {
               <input type="checkbox" id="3" value="1">3</input>
               <input type="checkbox" id="4" value="1">4</input>
               <input type="checkbox" id="5" value="1">5</input>
-              <div className='contenido'>{rent.startDate}</div>
-              <div className='contenido'>{rent.endDate}</div>
+              <div className='contenido'>{m.startDate}</div>
+              <div className='contenido'>{m.endDate}</div>
               {/* <div className='divEliminar'><button className='botonEliminar' onClick={() => { deleteRent(rent.id) }}>X</button></div> */}
             </div>
-          )}
+          })
+          }
+          
         </div>
         <div className="justifybutton">
           <Link to='/profile' className='backbutton'>Back</Link>

@@ -8,6 +8,16 @@ import axios from 'axios';
 const Login = ({ setUser }) => {
 
     const history = useHistory();
+    // const getEmail = async () => {
+    //     try {
+    //         let email = localStorage.getItem('email');
+    //         const res = await axios.get(`http://localhost:8000/api/auth/user/email/${email}`);
+    //         console.log(res);
+    //         localStorage.setItem('user_id', res.data[0].id);
+    //     } catch (error) {
+    //         console.log({ message: 'ERROR' })
+    //     }
+    // }
     const handleSubmit = event => {
         event.preventDefault(); // para que no se recargue la pagina
         const user = {
@@ -20,11 +30,12 @@ const Login = ({ setUser }) => {
                 console.log("axios hecho")
                 localStorage.setItem('authToken', res.data.token);
                 localStorage.setItem('user', JSON.stringify(res.data));
-                setUser(res.data);
+                setUser(res.data.user);
+                // getEmail();
 
                 notification.success({ message: 'Login correcto!', description: 'Bienvenido a Varitx Paradise!' })
                 setTimeout(() => {
-                    history.push('/profile')
+                    history.push('/rents')
                 }, 1000);
             })
             .catch(error => { throw (error) })
