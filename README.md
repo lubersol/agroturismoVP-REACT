@@ -11,7 +11,6 @@ El proyecto consta de una página *HOME* con un menú de navegación desde el qu
 En el cuerpo de la página, puede acceder a un calendario desde el cual elegir una fecha de entrada y otra de salida, tipo de habitación a través de un menú desplegable y hacer una reserva.
 
 Una vez hecho el login, puede acceder a sus reservas.
-El *administrador* a través de un correo y contraseña puede ver las citas de todos los usuarios.
 
 ## TECNOLOGÍAS :gear:
 

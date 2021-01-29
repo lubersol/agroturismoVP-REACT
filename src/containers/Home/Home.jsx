@@ -22,9 +22,6 @@ const Home = () => {
         }
     }
 
-
-    // { start: new Date() }
-
     useEffect(() => {
         let entrada = localStorage.getItem('startDate');
         console.log(entrada);
@@ -36,7 +33,6 @@ const Home = () => {
 
     const handleDateChange = e => {
         setStartDate(e.target.value);
-        console.log(e.target.value);
         setEndDate(e.target.value);
         localStorage.setItem('startDate', startDate);
         localStorage.setItem('endDate', endDate);
@@ -54,11 +50,9 @@ const Home = () => {
                     endDate: endDate,
                     room_id: event.target.room.value,
                     user_id: userLogged,
-
                 }
                 console.log(order);
                 let reserva = await axios.post('http://localhost:8000/api/auth/rent/create', order)
-                // { startDate, endDate }
                 localStorage.setItem('reserva', reserva.data);
                 console.log(reserva);
                 notification.success({ message: 'Reserva creada!', description: 'Se ha creado correctamente la reserva' })
