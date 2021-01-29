@@ -4,7 +4,16 @@
     background-color: $Light;
     height: 70vh;
 }
-   
+ 
+.titularP{
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background-color: #faf8f5;
+    margin-bottom: 0em;
+}
+
 .logout{
     display: flex;
     flex-direction: row;
@@ -35,11 +44,24 @@
 
 .cajaReservas {
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
 }
 
 .reserva{
     color:$Dark;
 }
-  
+ 
+.cajaFotos{
+    display:flex;
+    justify-content: center;
+    background-size: cover;
+    height: 50vh;
+    width:100%;
+}
+
+
+    
+    
+
+

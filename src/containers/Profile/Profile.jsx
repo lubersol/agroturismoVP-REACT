@@ -36,18 +36,24 @@ const Profile = (props) => {
     return (
         <div className='mainContainer'>
             <header className="cajaTitulo">
-                <p className="titular">Area cliente</p>
+                <p className="titularP">Area cliente</p>
             </header>
             <section className='logout'>
                 <button className='logoutButton' onClick={logout}>Logout</button>
             </section>
             <div className="cajaReservas">
-                <section className='reserva'>
-                    <Link to='/rents'>Mis reservas</Link>
+                <section className='divReservar'>
+                    <Link to='/rents' className='botonReserva'>Mis reservas</Link>
                 </section>
-                <section className='reserva'>
-                    <Link to='/'>Reservar</Link>
+                <section className='divReservar'>
+                    <Link to='/' className='botonReserva'>Reservar</Link>
                 </section>
+
+            </div>
+            <div className="cajaFotos">
+                {/* <section className='fotoFlores'><img src="/images/piscina2.jpg" alt="foto piscina varitx pollensa" />
+                </section> */}
+                <img src="/images/hamacas_piscina.jpg" alt="foto exterior piscina hamacas varitx paradise" />
             </div>
         </div>
     )

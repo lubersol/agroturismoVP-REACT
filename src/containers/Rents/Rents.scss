@@ -8,21 +8,61 @@
   width: 100vw;
 }
 
+.botonBack{
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4.3em;
+}
+
+.backbutton{
+  background-color: $Dark;
+  border: 1px solid $Dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.6em;
+  text-decoration: none;
+  color: $Light;
+  font-size: 1em;
+  height: 2.5em;
+  width: 4.5em;
+  &:hover{
+      background-color:rgb(94, 40, 80);
+      border: 1px solid $Dark;
+      color: $LightMenu;        
+  }
+}
+
+.reservation{
+  display:flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: $Dark;
+  font-family: 'Lobster Two', cursive;
+}
+
+.parrafo{
+  margin: 0.5em;
+}
+
 .reserva {
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: center;
 
-  .info {
-      padding: 2vh;
-      border-radius: 1em;
-      margin: 2em;
-      background-color: #a5c4c7;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      vertical-align: middle
+.info {
+    padding: 2vh;
+    border-radius: 1em;
+    margin: 2em;
+    background-color: #a5c4c7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle
   }
   .contenido{
     background-color: #a5c4c7;
