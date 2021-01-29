@@ -45,9 +45,13 @@ El *administrador* a través de un correo y contraseña puede ver las citas de t
 
 ![Screenshot](public/images/galeria.png)
 
+:radio_button: PROFILE.
+
+![Screenshot](public/images/profile.png)
+
 :radio_button: RESERVAS.
 
-
+![Screenshot](public/images/reservas.png)
 
 
 ## ENDPOINTS :link:

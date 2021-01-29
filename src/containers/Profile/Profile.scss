@@ -42,10 +42,18 @@
     }
 }
 
+.misReservas{
+    display:flex;
+}
+
 .cajaReservas {
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
+    margin-left: 14em;
+    margin-right: 14em;
+    margin-bottom: 1em;
+
 }
 
 .reserva{

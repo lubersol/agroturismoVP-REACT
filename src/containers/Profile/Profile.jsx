@@ -35,17 +35,17 @@ const Profile = (props) => {
 
     return (
         <div className='mainContainer'>
-            <header className="cajaTitulo">
-                <p className="titularP">Area cliente</p>
+            <header className='cajaTitulo'>
+                <p className='titularP'>Area cliente</p>
             </header>
             <section className='logout'>
                 <button className='logoutButton' onClick={logout}>Logout</button>
             </section>
-            <div className="cajaReservas">
-                <section className='divReservar'>
+            <div className='cajaReservas'>
+                <section className='misReservas'>
                     <Link to='/rents' className='botonReserva'>Mis reservas</Link>
                 </section>
-                <section className='divReservar'>
+                <section className='misReservas'>
                     <Link to='/' className='botonReserva'>Reservar</Link>
                 </section>
 
