@@ -1,0 +1,22 @@
+@import '../../global.scss';
+
+.footer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $LightMenu;
+    height: 7em;
+    padding:0.5em;
+}
+.direccion, .servicios, .condiciones, .contacto {
+    color: $Dark;
+    font-family: $font-stack;
+    font-size: 1.3em;
+    margin:0;
+}
+.texto{
+    color: $primary-color;
+    font-family: $font-stack;
+    font-size: 1em;
+    margin:0;
+}

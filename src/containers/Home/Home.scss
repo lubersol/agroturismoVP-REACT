@@ -1,0 +1,133 @@
+@import '../../global.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+
+body {
+    font-size: 0.80em!important;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    // color: $primary-color;
+    height: 70vh;
+}
+
+.contenedorCentral {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.collage {
+    display: flex;
+    background-position: right;
+    background-size: cover;
+    width: 55em;
+    height: 34.2em;
+}
+
+.picker {
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 0;
+    width: 32.5em;
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+.fechaYreserva {
+    display:flex;
+    flex-direction: row;
+    width: 28em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom:0em;  
+}
+
+.formularioFechas{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputs{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1em;
+    color: $Dark;
+}
+
+.selector{
+    display:flex;
+    color: $Dark;
+    font-family: $font-stack;
+    margin-bottom: 0.75em;
+}
+
+.divReservar{
+    margin-left: 2em;
+    margin-right: 1.5em;
+    margin-top: 0.5em;
+}
+
+.reservar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 28em;
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.welcome {
+    font-size: 2em;
+    color: $Dark;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+
+.textoPrincipal {
+    font-size: 1.2em;
+    color: $Dark;
+    font-family: 'Lobster Two', cursive;
+    margin:0;
+}
+
+.divReservar {
+    display:flex;
+    width: 7em;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+.botonReserva {
+    background-color: rgb(153, 204, 153);
+    border: 1px solid rgb(108, 194, 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.6em;
+    text-decoration: none;
+    color: $Light;
+    font-size: 1em;
+    height: 2em;
+    width: 6em;
+    &:hover{
+    background-color:rgb(107, 167, 107);
+    border: 1px solid rgb(84, 138, 84);
+    color: $LightMenu;        
+
+    }    
+}

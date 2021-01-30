@@ -1,0 +1,124 @@
+@import '../../global.scss';
+
+.divCentral{
+  display: flex;
+  flex-direction: column;
+  color: #84a9ac;
+  height: 100vh;
+  width: 100vw;
+}
+
+.botonBack{
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4.3em;
+}
+
+.backbutton{
+  background-color: $Dark;
+  border: 1px solid $Dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.6em;
+  text-decoration: none;
+  color: $Light;
+  font-size: 1em;
+  height: 2.5em;
+  width: 4.5em;
+  &:hover{
+      background-color:rgb(94, 40, 80);
+      border: 1px solid $Dark;
+      color: $LightMenu;        
+  }
+}
+
+.reservation{
+  display:flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: $Dark;
+  font-family: 'Lobster Two', cursive;
+}
+
+.parrafo{
+  margin: 0.5em;
+}
+
+.reserva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+
+.info {
+    padding: 2vh;
+    border-radius: 1em;
+    margin: 2em;
+    background-color: #a5c4c7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle
+  }
+  .contenido{
+    background-color: #a5c4c7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    color:  #11537A;
+  }
+
+  .divEliminar{
+    display: flex;
+    justify-content: center;
+    background-color: #a5c4c7;
+    margin-top: 0.5em;
+
+    .botonEliminar{
+    cursor: pointer;
+    box-shadow:inset 0px 39px 0px -24px #e67a73;
+	  background-color:#e4685d;
+	  border-radius:4px;
+	  border:1px solid #ffffff;
+	  display:inline-block;
+	  color:#ffffff;
+	  -family:Arial;
+	  font-size:15px;
+	  padding:6px 15px;
+	  text-decoration:none;
+	  text-shadow:0px 1px 0px #b23e35;
+    }
+  }
+
+}
+
+.cajaBoton{
+  display: flex;
+  justify-content: center;
+}
+
+.atras{
+  width: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  border: none;
+  color: #11537A;
+  background-color:#a5c4c7;
+  cursor: pointer;
+  border-radius: 0.6em;
+  padding: 0.3em;
+  &:hover{
+    background-color: #11537A;
+    color: #3EB6C2;
+  }
+}
+
