@@ -45,8 +45,8 @@ const Rents = () => {
         </article>
       </div>
       <div className="reserva">
-        {rents.map(rent => (
-          <div key={rent._id} className="info">
+        {rents.map((rent) => (
+          <div key={rent.id} className="info">
             <div className="contenido">
               <p>Codigo habitación</p></div>
             <div className="contenido">{rent.room_id}</div>
