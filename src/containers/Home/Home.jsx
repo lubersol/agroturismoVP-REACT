@@ -73,7 +73,7 @@ const Home = () => {
                     <section className="picker">
                         <section className="reservar">
                             <p className="welcome">Welcome to Varitx Paradise!</p>
-                            <p className="textoPrincipal">Varitx Paradise es un agroturismo situado al norte de Mallorca, en Pollensa, en un entorno incomparable al lado de la sierra de Tramuntana. Se encuentra a 5km del pueblo de Pollensa. Puedes consultar nuestra disponibilidad seleccionando las fechas de tus vacaciones en el calendario.</p>
+                            <p className="textoPrincipal">Varitx Paradise es un agroturismo situado al norte de Mallorca, en Pollensa, en un entorno incomparable al lado de la sierra de Tramuntana. Se encuentra a 5km del pueblo de Pollensa. Consulta nuestra disponibilidad seleccionando las fechas de tus vacaciones en el calendario.</p>
                         </section>
                         <div className="fechaYreserva">
                             <form className="formularioFechas" onSubmit={handleSubmit}>
