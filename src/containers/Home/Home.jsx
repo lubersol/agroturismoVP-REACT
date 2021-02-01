@@ -11,6 +11,7 @@ const Home = () => {
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
 
+    //A través del email consigo el user id para poder hacer reservas
     const getEmail = async () => {
         try {
             let email = localStorage.getItem('email');
@@ -21,7 +22,7 @@ const Home = () => {
             console.log({ message: 'error' })
         }
     }
-
+//Guardo en variables la fecha de entrada y salida del calendario
     useEffect(() => {
         let entrada = localStorage.getItem('startDate');
         console.log(entrada);
@@ -33,8 +34,15 @@ const Home = () => {
 
     const handleDateChange = e => {
         setStartDate(e.target.value);
-        setEndDate(e.target.value);
+        // setEndDate(e.target.value);
         localStorage.setItem('startDate', startDate);
+        // localStorage.setItem('endDate', endDate);
+    }
+
+    const handleDateDosChange = e => {
+        // setStartDate(e.target.value);
+        setEndDate(e.target.value);
+        // localStorage.setItem('startDate', startDate);
         localStorage.setItem('endDate', endDate);
     }
 
@@ -80,7 +88,7 @@ const Home = () => {
                                 <label className="selector">Selecciona fechas</label>
                                 <div className="inputs">
                                     <input type="date" name="start" onChange={handleDateChange} required />
-                                    <input type="date" name="end" onChange={handleDateChange} required />
+                                    <input type="date" name="end" onChange={handleDateDosChange} required />
                                 </div>
                                 <label className="selector">Selecciona tipo de habitacion</label>
                                 <select className="selector" name="room">
