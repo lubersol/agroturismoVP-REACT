@@ -87,8 +87,8 @@ const Home = () => {
                             <form className="formularioFechas" onSubmit={handleSubmit}>
                                 <label className="selector">Selecciona fechas</label>
                                 <div className="inputs">
-                                    <input type="date" name="start" onChange={handleDateChange} required />
-                                    <input type="date" name="end" onChange={handleDateDosChange} required />
+                                    <input type="date" name="date" onChange={handleDateChange} required />
+                                    <input type="date" name="date" onChange={handleDateDosChange} required />
                                 </div>
                                 <label className="selector">Selecciona tipo de habitacion</label>
                                 <select className="selector" name="room">
