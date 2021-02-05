@@ -3,8 +3,7 @@ import './Header.scss';
 import { Link, useHistory } from 'react-router-dom';
 import { notification } from 'antd';
 
-// class component
-// class Header extends React.Component {
+
 const Header = ({ user, setUser, setMostrarLogin, setMostrarRegister }) => {
 const history = useHistory();
   const logout = () => {

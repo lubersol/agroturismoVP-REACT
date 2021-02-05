@@ -10,6 +10,7 @@ const Login = ({ setUser }) => {
     const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    //Guardar email en local storage
     const getEmail = async () => {
         try {
             let email = localStorage.getItem('email');
