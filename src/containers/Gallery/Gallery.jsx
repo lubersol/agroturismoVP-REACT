@@ -36,9 +36,6 @@ let imgUrls = [
     './images/habitacionDoblePiedra.jpg',
 ]
 
-
-
-
 export default class Gallery extends Component {
     constructor(props) {
         super(props);
@@ -75,7 +72,6 @@ export default class Gallery extends Component {
             </div>
         )
     }
-
 
     // Funcion para abrir la modal
     openModal = (url) => {

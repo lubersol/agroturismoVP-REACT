@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from "react-router";
-//import { Link } from 'react-router-dom';
 import { notification } from 'antd';
 import axios from 'axios';
 
@@ -8,7 +7,6 @@ import axios from 'axios';
 const Register = () => {
 
     const history = useHistory();
-
     const handleSubmit = async event => {
         console.log("registrado");
         try {
@@ -31,9 +29,9 @@ const Register = () => {
     return (
         <div className="containerForm">
             <form className="formulario" onSubmit={handleSubmit}>
-                <header className="cajaTitulo">
+                <section className="cajaTitulo">
                     <p className="titular">Registrarme</p>
-                </header>
+                </section>
                 <div className="campo">
                     <input className="datos" type="text" name="name" placeholder="Introduce tu nombre" required />
                 </div>

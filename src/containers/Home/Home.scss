@@ -1,6 +1,5 @@
 @import '../../global.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
@@ -10,7 +9,6 @@ body {
 .home {
     display: flex;
     flex-direction: column;
-    // color: $primary-color;
     height: 70vh;
 }
 
@@ -112,7 +110,7 @@ body {
 }
 
 .botonReserva {
-    background-color: rgb(153, 204, 153);
+    background-color: rgb(142, 187, 142);
     border: 1px solid rgb(108, 194, 108);
     display: flex;
     justify-content: center;
@@ -122,12 +120,11 @@ body {
     text-decoration: none;
     color: $Light;
     font-size: 1em;
-    height: 2em;
-    width: 6em;
+    height: 2.3em;
+    width: 6.5em;
     &:hover{
     background-color:rgb(107, 167, 107);
     border: 1px solid rgb(84, 138, 84);
-    color: $LightMenu;        
-
+    color: white;        
     }    
 }

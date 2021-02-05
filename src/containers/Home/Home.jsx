@@ -16,33 +16,27 @@ const Home = () => {
         try {
             let email = localStorage.getItem('email');
             const res = await axios.get(`http://localhost:8000/api/auth/user/email/${email}`);
-            console.log(res);
+            // console.log(res);
             localStorage.setItem('user_id', res.data[0].id);
         } catch (error) {
-            console.log({ message: 'error' })
+            // console.log({ message: 'error' })
         }
     }
 //Guardo en variables la fecha de entrada y salida del calendario
     useEffect(() => {
         let entrada = localStorage.getItem('startDate');
-        console.log(entrada);
         setStartDate(entrada);
         let salida = localStorage.getItem('endDate');
-        console.log(salida);
         setEndDate(salida);
     }, [])
 
     const handleDateChange = e => {
         setStartDate(e.target.value);
-        // setEndDate(e.target.value);
         localStorage.setItem('startDate', startDate);
-        // localStorage.setItem('endDate', endDate);
     }
 
     const handleDateDosChange = e => {
-        // setStartDate(e.target.value);
         setEndDate(e.target.value);
-        // localStorage.setItem('startDate', startDate);
         localStorage.setItem('endDate', endDate);
     }
 

@@ -4,44 +4,7 @@
     background-color: $Light;
     height: 70vh;
 }
- 
-.titularP{
-    color: #333;
-    font-family: "Open Sans", sans-serif;
-    font-size: 2em;
-    text-align: center;
-    background-color: #faf8f5;
-    margin-bottom: 0em;
-}
-
-.logout{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 4.3em;
   
-    .logoutButton {
-        background-color: $Dark;
-        border: 1px solid $Dark;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        border-radius: 0.6em;
-        text-decoration: none;
-        color: $Light;
-        font-size: 1em;
-        height: 2.5em;
-        width: 4.5em;
-        &:hover{
-            background-color:rgb(94, 40, 80);
-            border: 1px solid $Dark;
-            color: $LightMenu;        
-        }
-    }
-}
-
 .misReservas{
     display:flex;
 }
@@ -50,9 +13,10 @@
     display:flex;
     justify-content: space-around;
     flex-direction: row;
-    margin-left: 14em;
-    margin-right: 14em;
+    margin-left: 20em;
+    margin-right: 20em;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .reserva{

@@ -27,25 +27,39 @@ function App() {
     console.error(error)
   }
   const [user, setUser] = useState(initialUser);
-  
-return (
-  <BrowserRouter>
-    <Header />
-    <Switch>
-      <Route path='/' component={Home} exact />
-      <Route path='/gallery' component={Gallery} exact />
-      <Route path='/register' component={Register} exact />
-      <Route path='/login' component={Login} exact>
-        <Login setUser={setUser} />
-      </Route>
-      <Route path='/rents' component={Rents} exact />
-      <Route path='/profile' component={Profile} exact>
-        <Profile setUser={setUser} />
-      </Route>
-    </Switch>
-    <Footer />
-  </BrowserRouter>
-);
+  const [mostrarLogin, setMostrarLogin] = useState(false);
+  const [mostrarRegister, setMostrarRegister] = useState(false);
+
+
+  return (
+    <BrowserRouter>
+      <Header user={user} setUser={setUser}
+        setMostrarLogin={setMostrarLogin}
+        setMostrarRegister={setMostrarRegister}
+      />
+      <Switch>
+        <Route path='/' exact>
+          <Home
+            setUser={setUser}
+            mostrarLogin={mostrarLogin}
+            setMostrarLogin={setMostrarLogin}
+            mostrarRegister={mostrarRegister}
+            setMostrarRegister={setMostrarRegister}
+          />
+        </Route>
+        <Route path='/gallery' component={Gallery} exact />
+        <Route path='/register' component={Register} exact />
+        <Route path='/login' exact>
+          <Login setUser={setUser} />
+        </Route>
+        <Route path='/rents' component={Rents} exact />
+        <Route path='/profile' exact>
+          <Profile setUser={setUser} />
+        </Route>
+      </Switch>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;
