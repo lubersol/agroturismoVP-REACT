@@ -15,11 +15,10 @@ const Home = () => {
     const getEmail = async () => {
         try {
             let email = localStorage.getItem('email');
-            const res = await axios.get(`http://localhost:8000/api/auth/user/email/${email}`);
+            const res = await axios.get(`http://localhost:8000/api/user/email/${email}`);
             // console.log(res);
             localStorage.setItem('user_id', res.data[0].id);
         } catch (error) {
-            // console.log({ message: 'error' })
         }
     }
 //Guardo en variables la fecha de entrada y salida del calendario
@@ -54,7 +53,7 @@ const Home = () => {
                     user_id: userLogged,
                 }
                 console.log(order);
-                let reserva = await axios.post('http://localhost:8000/api/auth/rent/create', order)
+                let reserva = await axios.post('http://localhost:8000/api/rent', order)
                 localStorage.setItem('reserva', reserva.data);
                 console.log(reserva);
                 notification.success({ message: 'Reserva creada!', description: 'Se ha creado correctamente la reserva' })

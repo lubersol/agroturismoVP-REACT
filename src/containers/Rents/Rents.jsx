@@ -10,7 +10,7 @@ const Rents = () => {
   useEffect(() => {
     let userId = localStorage.getItem('user_id');
     console.log(userId);
-    axios.get(`http://localhost:8000/api/auth/rent/show/${userId}`)
+    axios.get(`http://localhost:8000/api/rent/show/${userId}`)
       .then((res) => {
         console.log(res.data)
         setRents(res.data);
@@ -21,7 +21,7 @@ const Rents = () => {
 
   //Eliminar una reserva por el usuario
   const deleteRent = async (id) => {
-    const resultado = await axios.delete(`http://localhost:8000/api/auth/rent/cancel/${id}`)
+    const resultado = await axios.delete(`http://localhost:8000/api/rent/cancel/${id}`)
     console.log(resultado);
     setRents(rents.filter(reserva => reserva.id !== id));
     notification.success({ message: "Reserva eliminada", description: "Has cancelado la reserva" })

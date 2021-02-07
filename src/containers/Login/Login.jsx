@@ -14,7 +14,7 @@ const Login = ({ setUser }) => {
     const getEmail = async () => {
         try {
             let email = localStorage.getItem('email');
-            const res = await axios.get(`http://localhost:8000/api/auth/user/email/${email}`);
+            const res = await axios.get(`http://localhost:8000/api/user/email/${email}`);
             console.log(res);
             localStorage.setItem('user_id', res.data[0].id);
         } catch (error) {
@@ -23,7 +23,7 @@ const Login = ({ setUser }) => {
     }
     const handleSubmit = event => {
         event.preventDefault(); // para que no se recargue la pagina
-        axios.post('http://localhost:8000/api/auth/login', { email, password })
+        axios.post('http://localhost:8000/api/login', { email, password })
             .then(res => {
                 console.log("axios hecho")
                 localStorage.setItem('authToken', res.data.token);
@@ -37,8 +37,9 @@ const Login = ({ setUser }) => {
             })
             .catch(error => {
                 console.log(error);
+                notification.error({ message: 'Login incorrecto', description: 'Los datos introducidos no son correctos' })
+
             })
-        notification.error({ message: 'Error al iniciar sesion', description: 'Email o contraseña incorrectos' });
     }
 
     return (
