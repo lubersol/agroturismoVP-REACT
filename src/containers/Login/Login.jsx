@@ -23,7 +23,7 @@ const Login = ({ setUser }) => {
     }
     const handleSubmit = event => {
         event.preventDefault(); // para que no se recargue la pagina
-        axios.post('http://localhost:8000/api/login', { email, password })
+        axios.post('http://localhost:8000/api/user/login', { email, password })
             .then(res => {
                 console.log("axios hecho")
                 localStorage.setItem('authToken', res.data.token);

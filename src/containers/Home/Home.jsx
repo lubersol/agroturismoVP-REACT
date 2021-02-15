@@ -8,6 +8,7 @@ import { notification } from 'antd';
 
 const Home = () => {
     const history = useHistory();
+    const token = localStorage.getItem('authToken');
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
 
@@ -16,12 +17,11 @@ const Home = () => {
         try {
             let email = localStorage.getItem('email');
             const res = await axios.get(`http://localhost:8000/api/user/email/${email}`);
-            // console.log(res);
             localStorage.setItem('user_id', res.data[0].id);
         } catch (error) {
         }
     }
-//Guardo en variables la fecha de entrada y salida del calendario
+    //Guardo en variables la fecha de entrada y salida del calendario
     useEffect(() => {
         let entrada = localStorage.getItem('startDate');
         setStartDate(entrada);
@@ -44,6 +44,7 @@ const Home = () => {
     const handleSubmit = async (event) => {
         try {
             event.preventDefault();
+            const headers = { headers: { Authorization: `Bearer ${token}` }};
             const userLogged = localStorage.getItem('user_id') || false;
             if (userLogged) {
                 const order = {
@@ -53,7 +54,7 @@ const Home = () => {
                     user_id: userLogged,
                 }
                 console.log(order);
-                let reserva = await axios.post('http://localhost:8000/api/rent', order)
+                let reserva = await axios.post('http://localhost:8000/api/rent', order, headers)
                 localStorage.setItem('reserva', reserva.data);
                 console.log(reserva);
                 notification.success({ message: 'Reserva creada!', description: 'Se ha creado correctamente la reserva' })
