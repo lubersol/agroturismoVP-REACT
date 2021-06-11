@@ -1,6 +1,7 @@
 @import '../../global.scss';
 /* Smartphones (portrait & landscape) */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
   .cabecera{
     display: flex;
     flex-direction: column;

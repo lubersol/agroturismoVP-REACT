@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
     .home{
         width: 100%;
         margin-top: 2rem;
     }
-    .picker{
-        width: 100%;
-    }
     .contenedorCentral {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        flex-direction: column !important;
+    }
+    .picker{
+        width: 100%!important;
     }
     .reservar{
-        max-width: 100%;
+        width: 100%;
     }
     .welcome{
         width: 100%;
@@ -27,6 +29,7 @@
     }
     .fechaYreserva{
         max-width: 100%;
+        margin: 0!important;
     }
     .formularioFechas{
         max-width: 100%;
@@ -37,11 +40,15 @@
     }
     select.selector{
         margin-top: 0.1rem;
-        margin-bottom: 0.1rem;
+        margin-bottom: 0.2rem;
     }
     .divReservar{
-        margin-top: 0.4rem;
-        margin-bottom: 0.4rem;
+        margin-top: 0.4rem!important;
+        margin-bottom: 0.4rem!important;
+    }
+    .collage{
+        width: 100%!important;
+        padding: 0.2rem;
     }
     img.small{
         max-width: 100%;
@@ -151,9 +158,11 @@ body {
 .welcome {
     font-size: 2rem;
     color: $Dark;
-    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.1rem;
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
 }
 
 .textoPrincipal {

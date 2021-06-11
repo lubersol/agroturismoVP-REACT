@@ -1,5 +1,10 @@
 @import '../../global.scss';
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.gallery-container{
+  margin-top: 2rem;
+}
 
+}
 html,
 body {
   min-height: 100%;

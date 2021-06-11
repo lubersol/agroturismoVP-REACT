@@ -28,8 +28,6 @@ class Footer extends React.Component {
                     <p className="condiciones">Proteccion datos</p>
                 </div>
                 <div>©Lucía Bermejo</div>
-
-                {/* <img src={instagram.avatarUrl} alt="icono instagram" />  */}
             </footer>
         );
     };
