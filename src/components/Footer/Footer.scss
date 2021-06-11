@@ -5,18 +5,18 @@
     justify-content: space-between;
     align-items: center;
     background-color: $LightMenu;
-    height: 7em;
-    padding:0.5em;
+    height: 6.5rem;
+    padding:0.5rem;
 }
 .direccion, .servicios, .condiciones, .contacto {
     color: $Dark;
     font-family: $font-stack;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     margin:0;
 }
 .texto{
     color: $primary-color;
     font-family: $font-stack;
-    font-size: 1em;
+    font-size: 1rem;
     margin:0;
 }

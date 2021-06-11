@@ -97,7 +97,7 @@ const Home = () => {
                             </form>
                         </div>
                     </section>
-                    <section className="collage"><img src="/images/foto_finca.jpg" alt="foto fachada varitx paradise" />
+                    <section className="collage"><img className="panoramica small" src="/images/foto_finca.jpg" alt="foto fachada varitx paradise" />
                     </section>
                 </section>
             </div>

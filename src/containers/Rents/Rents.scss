@@ -54,12 +54,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: center;
+  margin-top:0;
 
 .info {
     padding: 2vh;
     border-radius: 1em;
-    margin: 2em;
+    margin: 0.5em;
     background-color: #a5c4c7;
     text-align: center;
     display: flex;
@@ -73,6 +73,16 @@
     flex-direction: column;
     vertical-align: middle;
     color:  #11537A;
+  }
+  .descripcion{
+    width: 15rem;
+  }
+  .boxImagen{
+    display: flex;
+    flex-direction: row;
+  }
+  img.medium{
+  width: 100%;
   }
 
   .divEliminar{
