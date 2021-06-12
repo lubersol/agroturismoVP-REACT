@@ -17,7 +17,7 @@ const Profile = () => {
                 </section>
             </div>
             <div className="cajaFotos">
-                <img src="/images/hamacas_piscina.jpg" alt="foto exterior piscina hamacas varitx paradise" />
+                <img className="small" src="/images/hamacas_piscina.jpg" alt="foto exterior piscina hamacas varitx paradise" />
             </div>
         </div>
     )

@@ -1,6 +1,10 @@
 @import '../../global.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.divCentral{
+  height: auto!important;
+}
+}
 
 .divCentral{
   display: flex;
@@ -74,8 +78,13 @@
     vertical-align: middle;
     color:  #11537A;
   }
+  div > p{
+    color: $Dark;
+    margin-bottom: 0!important;
+  }
   .descripcion{
     width: 15rem;
+    color:  #11537A;
   }
   .boxImagen{
     display: flex;

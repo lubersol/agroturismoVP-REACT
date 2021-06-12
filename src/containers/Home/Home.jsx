@@ -19,6 +19,7 @@ const Home = () => {
             const res = await axios.get(`http://localhost:8000/api/user/email/${email}`);
             localStorage.setItem('user_id', res.data[0].id);
         } catch (error) {
+            console.log({message:error});
         }
     }
     //Guardo en variables la fecha de entrada y salida del calendario

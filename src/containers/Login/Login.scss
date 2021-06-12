@@ -1,8 +1,12 @@
 @import '../../global.scss';
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-.formulario{
-    justify-content: space-evenly!important;
-}
+    .containerForm{
+        height:auto!important;
+    }
+    .formulario{
+        display: flex;
+        justify-content: space-evenly!important;
+    }
     .campo{
     width: 80%;
     justify-content: center;

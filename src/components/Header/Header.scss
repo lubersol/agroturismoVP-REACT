@@ -3,14 +3,11 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .cabecera{
-    display: flex;
     flex-direction: column;
-  // justify-content: center;
-    align-items: center;
+    height: auto!important;
   }
   .logo{
     display:flex;
-  // flex-direction: column;
   }
   .menu{
     width: 100%;
