@@ -55,16 +55,52 @@
   
 //   /* iPads (portrait & landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .home{
-        display:flex;
-        flex-direction: column;
+    .contenedorCentral {
+        align-items: center;
+        flex-direction: column !important;
+        height: auto;
     }
-    .contenedorCentral{
-      flex-direction: row;
+    .picker{
+        width: 100%!important;
+        flex-direction: row!important;
+        padding-bottom: 0.5rem;
+    }
+    .reservar{
+        width: 100%;
+    }
+    .welcome{
+        width: 100%;
+        margin: 0.3rem;
+    }
+    .textoPrincipal{
+        margin:0.3em;
+    }
+    .fechaYreserva{
+        max-width: 100%;
+        margin: 0!important;
+    }
+    .formularioFechas{
+        max-width: 100%;
+    }
+    .inputs{
+        flex-direction: column;
+        margin-top: 0.1rem;
+    }
+    .selector{
+        margin-top: 0.1rem;
+        margin-bottom: 0.2rem;
+    }
+    .divReservar{
+        margin-top: 1rem!important;
+        margin-bottom: 0.6rem!important;
     }
     .collage{
-        display:none;
+        width: 100%!important;
+        padding: 0.2rem;
     }
+    img.small{
+        max-width: 100%;
+      }
 }
 body {
     font-size: 0.80rem!important;

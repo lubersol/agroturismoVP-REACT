@@ -25,6 +25,34 @@
         max-width: 100%;
       }
 }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .mainContainer{
+        height: auto!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .cajaTitulo{
+        margin: 4rem;
+    }
+    .titular{
+        margin-bottom:0!important;
+    }
+    .cajaReservas{
+        margin-left: 0!important;
+        margin-right: 0!important;  
+        margin-bottom: 4rem!important;  
+    }
+    .cajaFotos{
+        width: 100%!important;
+        padding: 0.2rem;
+        height: auto!important;
+        margin-bottom: 8.5rem;
+    }
+    img.small{
+        max-width: 100%;
+      }
+}
 .mainContainer{
     background-color: $Light;
     height: 70vh;
