@@ -5,7 +5,13 @@
   height: auto!important;
 }
 }
-
+/* iPads (portrait & landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.divCentral{
+  width: auto!important;
+  height: auto!important;
+}
+}
 .divCentral{
   display: flex;
   flex-direction: column;
@@ -60,7 +66,7 @@
   align-items: center;
   margin-top:0;
 
-.info {
+  .info {
     padding: 2vh;
     border-radius: 1em;
     margin: 0.5em;
@@ -99,7 +105,7 @@
     justify-content: center;
     background-color: #a5c4c7;
     margin-top: 0.5em;
-
+  
     .botonEliminar{
     cursor: pointer;
     box-shadow:inset 0px 39px 0px -24px #e67a73;
